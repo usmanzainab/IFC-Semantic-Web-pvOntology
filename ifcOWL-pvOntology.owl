@@ -1,0 +1,1015 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/shamsi/ontologies/2018/3/ifcOWL-pvOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/shamsi/ontologies/2018/3/ifcOWL-pvOntology"
+     versionIRI="http://www.semanticweb.org/shamsi/ontologies/2018/3/ifcOWL-pvOntology/1.0.0">
+    <Prefix name="" IRI="http://www.semanticweb.org/shamsi/ontologies/2018/3/ifcOWL-pvOntology"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final</Import>
+    <Declaration>
+        <Class IRI="#SolarChargeController"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ChargeControllerVoltage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#BatteryType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EnvironmentalImpactIndicators"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CENTRAL_INVERTER"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SolarComponentManufacturer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SolarComponentEfficiency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMORPHOUS_MODULE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#POLYCRYSTALLINE_MODULE"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ModuleRatedPower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarModuleType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PULSE_WIDTH_MODULATED_PWM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarInverterProperties"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarBattery"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ExpectedServiceLife"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Warranty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MICRO_INVERTER"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarInverterType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#InverterFrequency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ifcSolarDeviceTypeEnum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarModuleTypeEnum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NOTDEFINED"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#InverterVoltage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarBatteryProperties"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ModuleType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#InverterType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarChargeControllerType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ifcSolarDeviceType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SolarComponentCondition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NICAD_SOLAR_BATTERY"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarChargeControllerProperties"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HYBRID_MODULE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USERDEFINED"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#BatteryVoltage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarDeviceProperties"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MAXIMUM_POWER_POINT_TRACKING_MPPT"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#PredefinedType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarBatteryType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarModuleProperties"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarBatteryTypeEnum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SIMPLE_1_2_STAGE_CONTROLS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarComponentEfficiencyEnum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LEAD_ACID_BATTERY"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BATTERY_BACKUP_INVERTER"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Cost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarInverterTypeEnum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LITHIUM_BATTERY"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarInverter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NIFE_SOLAR_BATTERY"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#STRING_INVERTER"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ifcSolarDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarModule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ModuleSurfaceArea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MONOCRYSTALLINE_MODULE"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ChargeControllerType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarChargeControllerTypeEnum"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#SolarBattery"/>
+        <Class IRI="#ifcSolarDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarBatteryProperties"/>
+        <Class IRI="#SolarDeviceProperties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarBatteryProperties"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#BatteryType"/>
+            <Class IRI="#SolarBatteryTypeEnum"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarBatteryProperties"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#BatteryVoltage"/>
+            <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcElectricVoltageMeasure"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarBatteryProperties"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#BatteryType"/>
+            <Class IRI="#SolarBatteryTypeEnum"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarBatteryProperties"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#BatteryVoltage"/>
+            <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcElectricVoltageMeasure"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarBatteryType"/>
+        <Class IRI="#ifcSolarDeviceType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarBatteryType"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#predefinedType_IfcSpaceHeaterType"/>
+            <Class IRI="#SolarBatteryTypeEnum"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarBatteryType"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#predefinedType_IfcSpaceHeaterType"/>
+            <Class IRI="#SolarBatteryTypeEnum"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarBatteryTypeEnum"/>
+        <Class IRI="#ifcSolarDeviceTypeEnum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarChargeController"/>
+        <Class IRI="#ifcSolarDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarChargeControllerProperties"/>
+        <Class IRI="#SolarDeviceProperties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarChargeControllerProperties"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#ChargeControllerType"/>
+            <Class IRI="#SolarChargeControllerTypeEnum"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarChargeControllerProperties"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#ChargeControllerVoltage"/>
+            <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcElectricVoltageMeasure"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarChargeControllerProperties"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#ChargeControllerType"/>
+            <Class IRI="#SolarChargeControllerTypeEnum"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarChargeControllerProperties"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#ChargeControllerVoltage"/>
+            <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcElectricVoltageMeasure"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarChargeControllerType"/>
+        <Class IRI="#ifcSolarDeviceType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarChargeControllerType"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#predefinedType_IfcSpaceHeaterType"/>
+            <Class IRI="#SolarChargeControllerTypeEnum"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarChargeControllerType"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#predefinedType_IfcSpaceHeaterType"/>
+            <Class IRI="#SolarChargeControllerTypeEnum"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarChargeControllerTypeEnum"/>
+        <Class IRI="#ifcSolarDeviceTypeEnum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarComponentEfficiencyEnum"/>
+        <Class IRI="https://w3id.org/express#ENUMERATION"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarDeviceProperties"/>
+        <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcEnergyProperties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarDeviceProperties"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#Cost"/>
+            <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcCostValue"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarDeviceProperties"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#EnvironmentalImpactIndicators"/>
+            <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcEnvironmentalImpactValue"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarDeviceProperties"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#ExpectedServiceLife"/>
+            <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcDateAndTime"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarDeviceProperties"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#SolarComponentCondition"/>
+            <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcConditionCriterionSelect"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarDeviceProperties"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#SolarComponentEfficiency"/>
+            <Class IRI="#SolarComponentEfficiencyEnum"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarDeviceProperties"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#SolarComponentManufacturer"/>
+            <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcPersonAndOrganization"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarDeviceProperties"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#Warranty"/>
+            <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcCalendarDate"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarDeviceProperties"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#SolarComponentEfficiency"/>
+            <Class IRI="#SolarComponentEfficiencyEnum"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarDeviceProperties"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#Cost"/>
+            <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcCostValue"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarDeviceProperties"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#EnvironmentalImpactIndicators"/>
+            <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcEnvironmentalImpactValue"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarDeviceProperties"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#ExpectedServiceLife"/>
+            <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcDateAndTime"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarDeviceProperties"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#SolarComponentCondition"/>
+            <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcConditionCriterionSelect"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarDeviceProperties"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#SolarComponentManufacturer"/>
+            <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcPersonAndOrganization"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarDeviceProperties"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#Warranty"/>
+            <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcCalendarDate"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarInverter"/>
+        <Class IRI="#ifcSolarDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarInverterProperties"/>
+        <Class IRI="#SolarDeviceProperties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarInverterProperties"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#InverterFrequency"/>
+            <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcFrequencyMeasure"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarInverterProperties"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#InverterType"/>
+            <Class IRI="#SolarInverterTypeEnum"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarInverterProperties"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#InverterVoltage"/>
+            <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcElectricVoltageMeasure"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarInverterProperties"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#InverterType"/>
+            <Class IRI="#SolarInverterTypeEnum"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarInverterProperties"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#InverterFrequency"/>
+            <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcFrequencyMeasure"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarInverterProperties"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#InverterVoltage"/>
+            <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcElectricVoltageMeasure"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarInverterType"/>
+        <Class IRI="#ifcSolarDeviceType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarInverterType"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#predefinedType_IfcSpaceHeaterType"/>
+            <Class IRI="#SolarInverterTypeEnum"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarInverterType"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#predefinedType_IfcSpaceHeaterType"/>
+            <Class IRI="#SolarInverterTypeEnum"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarInverterTypeEnum"/>
+        <Class IRI="#ifcSolarDeviceTypeEnum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarModule"/>
+        <Class IRI="#ifcSolarDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarModuleProperties"/>
+        <Class IRI="#SolarDeviceProperties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarModuleProperties"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#ModuleRatedPower"/>
+            <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcElectricCurrentMeasure"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarModuleProperties"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#ModuleSurfaceArea"/>
+            <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcAreaMeasure"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarModuleProperties"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#ModuleType"/>
+            <Class IRI="#SolarModuleTypeEnum"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarModuleProperties"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#ModuleType"/>
+            <Class IRI="#SolarModuleTypeEnum"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarModuleProperties"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#ModuleRatedPower"/>
+            <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcElectricCurrentMeasure"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarModuleProperties"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#ModuleSurfaceArea"/>
+            <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcAreaMeasure"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarModuleType"/>
+        <Class IRI="#ifcSolarDeviceType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarModuleType"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#predefinedType_IfcSpaceHeaterType"/>
+            <Class IRI="#SolarModuleTypeEnum"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarModuleType"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#predefinedType_IfcSpaceHeaterType"/>
+            <Class IRI="#SolarModuleTypeEnum"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarModuleTypeEnum"/>
+        <Class IRI="#ifcSolarDeviceTypeEnum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ifcSolarDevice"/>
+        <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcEnergyConversionDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ifcSolarDeviceType"/>
+        <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcEnergyConversionDeviceType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ifcSolarDeviceType"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#PredefinedType"/>
+            <Class IRI="#ifcSolarDeviceTypeEnum"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ifcSolarDeviceType"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#PredefinedType"/>
+            <Class IRI="#ifcSolarDeviceTypeEnum"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ifcSolarDeviceTypeEnum"/>
+        <Class IRI="https://w3id.org/express#ENUMERATION"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#SolarModuleTypeEnum"/>
+        <NamedIndividual IRI="#AMORPHOUS_MODULE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SolarInverterTypeEnum"/>
+        <NamedIndividual IRI="#BATTERY_BACKUP_INVERTER"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SolarInverterTypeEnum"/>
+        <NamedIndividual IRI="#CENTRAL_INVERTER"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SolarModuleTypeEnum"/>
+        <NamedIndividual IRI="#HYBRID_MODULE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SolarBatteryTypeEnum"/>
+        <NamedIndividual IRI="#LEAD_ACID_BATTERY"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SolarBatteryTypeEnum"/>
+        <NamedIndividual IRI="#LITHIUM_BATTERY"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SolarChargeControllerTypeEnum"/>
+        <NamedIndividual IRI="#MAXIMUM_POWER_POINT_TRACKING_MPPT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SolarInverterTypeEnum"/>
+        <NamedIndividual IRI="#MICRO_INVERTER"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SolarModuleTypeEnum"/>
+        <NamedIndividual IRI="#MONOCRYSTALLINE_MODULE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SolarBatteryTypeEnum"/>
+        <NamedIndividual IRI="#NICAD_SOLAR_BATTERY"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SolarBatteryTypeEnum"/>
+        <NamedIndividual IRI="#NIFE_SOLAR_BATTERY"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SolarComponentEfficiencyEnum"/>
+        <NamedIndividual IRI="#NOTDEFINED"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SolarModuleTypeEnum"/>
+        <NamedIndividual IRI="#POLYCRYSTALLINE_MODULE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SolarChargeControllerTypeEnum"/>
+        <NamedIndividual IRI="#PULSE_WIDTH_MODULATED_PWM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SolarChargeControllerTypeEnum"/>
+        <NamedIndividual IRI="#SIMPLE_1_2_STAGE_CONTROLS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SolarInverterTypeEnum"/>
+        <NamedIndividual IRI="#STRING_INVERTER"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SolarComponentEfficiencyEnum"/>
+        <NamedIndividual IRI="#USERDEFINED"/>
+    </ClassAssertion>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#BatteryType"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#BatteryVoltage"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#ChargeControllerType"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Cost"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#EnvironmentalImpactIndicators"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#ExpectedServiceLife"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#InverterFrequency"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#InverterType"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#InverterVoltage"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#ModuleRatedPower"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#ModuleSurfaceArea"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#ModuleType"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#PredefinedType"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#SolarComponentCondition"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#SolarComponentEfficiency"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#SolarComponentManufacturer"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Warranty"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#BatteryType"/>
+        <Class IRI="#SolarBatteryProperties"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#BatteryVoltage"/>
+        <Class IRI="#SolarBatteryProperties"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ChargeControllerType"/>
+        <Class IRI="#SolarChargeControllerProperties"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ChargeControllerVoltage"/>
+        <Class IRI="#SolarChargeControllerProperties"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Cost"/>
+        <Class IRI="#SolarDeviceProperties"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EnvironmentalImpactIndicators"/>
+        <Class IRI="#SolarDeviceProperties"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ExpectedServiceLife"/>
+        <Class IRI="#SolarDeviceProperties"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#InverterFrequency"/>
+        <Class IRI="#SolarInverterProperties"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#InverterType"/>
+        <Class IRI="#SolarInverterProperties"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#InverterVoltage"/>
+        <Class IRI="#SolarInverterProperties"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ModuleRatedPower"/>
+        <Class IRI="#SolarModuleProperties"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ModuleSurfaceArea"/>
+        <Class IRI="#SolarModuleProperties"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ModuleType"/>
+        <Class IRI="#SolarModuleProperties"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#PredefinedType"/>
+        <Class IRI="#ifcSolarDeviceType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#SolarComponentCondition"/>
+        <Class IRI="#SolarDeviceProperties"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#SolarComponentEfficiency"/>
+        <Class IRI="#SolarDeviceProperties"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#SolarComponentManufacturer"/>
+        <Class IRI="#SolarDeviceProperties"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Warranty"/>
+        <Class IRI="#SolarDeviceProperties"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#BatteryType"/>
+        <Class IRI="#SolarBatteryTypeEnum"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#BatteryVoltage"/>
+        <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcElectricVoltageMeasure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ChargeControllerType"/>
+        <Class IRI="#SolarChargeControllerTypeEnum"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ChargeControllerVoltage"/>
+        <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcElectricVoltageMeasure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Cost"/>
+        <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcCostValue"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EnvironmentalImpactIndicators"/>
+        <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcEnvironmentalImpactValue"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ExpectedServiceLife"/>
+        <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcDateAndTime"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#InverterFrequency"/>
+        <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcFrequencyMeasure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#InverterType"/>
+        <Class IRI="#SolarInverterTypeEnum"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#InverterVoltage"/>
+        <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcElectricVoltageMeasure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ModuleRatedPower"/>
+        <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcElectricCurrentMeasure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ModuleSurfaceArea"/>
+        <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcAreaMeasure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ModuleType"/>
+        <Class IRI="#SolarModuleTypeEnum"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#PredefinedType"/>
+        <Class IRI="#ifcSolarDeviceTypeEnum"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#SolarComponentCondition"/>
+        <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcConditionCriterionSelect"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#SolarComponentEfficiency"/>
+        <Class IRI="#SolarComponentEfficiencyEnum"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#SolarComponentManufacturer"/>
+        <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcPersonAndOrganization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Warranty"/>
+        <Class IRI="http://www.buildingsmart-tech.org/ifcOWL/IFC2X3_Final#IfcCalendarDate"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AMORPHOUS_MODULE</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">AMORPHOUS_MODULE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BATTERY_BACKUP_INVERTER</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BATTERY_BACKUP_INVERTER</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BatteryType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BatteryType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BatteryVoltage</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BatteryVoltage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CENTRAL_INVERTER</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CENTRAL_INVERTER</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChargeControllerType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ChargeControllerType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChargeControllerVoltage</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ChargeControllerVoltage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cost</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cost</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EnvironmentalImpactIndicators</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">EnvironmentalImpactIndicators</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ExpectedServiceLife</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ExpectedServiceLife</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HYBRID_MODULE</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">HYBRID_MODULE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#InverterFrequency</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">InverterFrequency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#InverterType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">InverterType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#InverterVoltage</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">InverterVoltage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LEAD_ACID_BATTERY</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LEAD_ACID_BATTERY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LITHIUM_BATTERY</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LITHIUM_BATTERY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MAXIMUM_POWER_POINT_TRACKING_MPPT</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MAXIMUM_POWER_POINT_TRACKING_MPPT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MICRO_INVERTER</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MICRO_INVERTER</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MONOCRYSTALLINE_MODULE</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MONOCRYSTALLINE_MODULE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ModuleRatedPower</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ModuleRatedPower</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ModuleSurfaceArea</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ModuleSurfaceArea</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ModuleType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ModuleType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NICAD_SOLAR_BATTERY</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NICAD_SOLAR_BATTERY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NIFE_SOLAR_BATTERY</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NIFE_SOLAR_BATTERY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NOTDEFINED</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NOTDEFINED</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#POLYCRYSTALLINE_MODULE</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">POLYCRSYTALLINE_MODULE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PULSE_WIDTH_MODULATED_PWM</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PULSE_WIDTH_MODULATED_PWM</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PredefinedType</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PredefinedType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SIMPLE_1_2_STAGE_CONTROLS</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SIMPLE_1_2_CONTROLS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SolarComponentCondition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SolarComponentCondition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SolarComponentEfficiency</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SolarComponentEfficiency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SolarComponentManufacturer</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SolarComponentManufacturer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#USERDEFINED</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">USERDEFINED</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Warranty</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Warranty</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
